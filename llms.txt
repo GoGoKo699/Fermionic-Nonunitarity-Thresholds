@@ -14,6 +14,10 @@ Primary routes:
 - science/interpretation.md: physical meaning, known-state and repeated-access boundaries.
 - references/RELATED_WORK.md and references/references.bib: primary attribution and actual model comparisons.
 - verification/README.md and verification/run_checks.py: finite reproducibility and limits.
+- learning/README.md: one connected learning route anchored in Watrous, The Theory of Quantum Information (2018).
+- learning/WATROUS_BRIDGE.md: verified textbook locators, notation conventions and project-specific bridges.
+- learning/WORKED_EXAMPLE.md: a fully computed four-mode filter, output and measurement toy; not the actual chain.
+- learning/MILESTONES.md: the common 30-milestone dependency map, with 12 background and 18 narrative milestones.
 
 Essential distinctions:
 - The same transformation and unrestricted controls are compared under different INPUT promises: unknown pure Slater versus arbitrary correlated fixed-number pure state.

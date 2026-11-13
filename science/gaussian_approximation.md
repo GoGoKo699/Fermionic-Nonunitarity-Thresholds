@@ -20,7 +20,7 @@ act on the sector of exactly $`m`$ fermions. A normalized pure Slater determinan
 Its occupied one-particle projector is $`P=\sum_{j=1}^m|v_j\rangle\langle v_j|`$. Write $`\Gamma_m(W)=\bigwedge^m W`$ for a number-preserving Gaussian unitary. All trace distances below use the half-trace convention
 
 ```math
-D_{\rm tr}(\rho,\sigma)=\frac12\|\rho-\sigma\|_1.
+D_{\rm tr}(\rho,\sigma)=\frac12\Vert \rho-\sigma\Vert _1.
 ```
 
 The input is supplied as a quantum specimen. The simulator is not given its occupied orbitals or a classical state description.
@@ -41,10 +41,10 @@ For every pure $`m`$-fermion Slater $`\Psi`$,
 \boxed{
 D_{\rm tr}\!\left(
  \Gamma_m(W)|\Psi\rangle\langle\Psi|\Gamma_m(W)^\dagger,
- \frac{K|\Psi\rangle\langle\Psi|K^\dagger}{\|K\Psi\|^2}
+ \frac{K|\Psi\rangle\langle\Psi|K^\dagger}{\Vert K\Psi\Vert ^2}
 \right)
 \le
-\min\!\left\{1,\sqrt{\min(m,N-m)}\,\|B\|\right\}.
+\min\!\left\{1,\sqrt{\min(m,N-m)}\,\Vert B\Vert \right\}.
 }
 ```
 
@@ -55,15 +55,15 @@ For the open Hatano–Nelson chain, the exact gauge relation is
 ```math
 U=S_g U_0 S_g^{-1},
 \qquad
-S_g=\operatorname{diag}(e^g,e^{2g},\ldots,e^{Ng}),
+S_g=\mathrm{diag}(e^g,e^{2g},\ldots,e^{Ng}),
 ```
 
 with $`U_0`$ unitary. Hence
 
 ```math
-\|U\|,\ \|U^{-1}\|\le e^{g(N-1)},
+\Vert U\Vert ,\ \Vert U^{-1}\Vert \le e^{g(N-1)},
 \qquad
-\|B\|\le g(N-1).
+\Vert B\Vert \le g(N-1).
 ```
 
 Therefore the deterministic worst-Slater error obeys
@@ -91,7 +91,7 @@ Consider the normalized path
 ```math
 |\Phi_s\rangle
 =\frac{e^{s\widehat B}|\Psi\rangle}
-       {\|e^{s\widehat B}\Psi\|},
+       {\Vert e^{s\widehat B}\Psi\Vert },
 \qquad 0\le s\le1.
 ```
 
@@ -102,31 +102,31 @@ Every $`\Phi_s`$ remains a pure Slater: the invertible one-particle map $`e^{sB}
 =\bigl(\widehat B-\langle\widehat B\rangle_s\bigr)|\Phi_s\rangle.
 ```
 
-With the Fubini–Study distance defined as $`\arccos|\langle\phi|\psi\rangle|`$, the path speed is $`\sqrt{\operatorname{Var}_{\Phi_s}(\widehat B)}`$. Wick's identity for a pure Slater with occupied projector $`P_s`$ gives
+With the Fubini–Study distance defined as $`\arccos|\langle\phi|\psi\rangle|`$, the path speed is $`\sqrt{\mathrm{Var}_{\Phi_s}(\widehat B)}`$. Wick's identity for a pure Slater with occupied projector $`P_s`$ gives
 
 ```math
-\operatorname{Var}_{\Phi_s}(d\Gamma(B))
-=\operatorname{Tr}\bigl[P_sB(I-P_s)B\bigr]
-=\|(I-P_s)BP_s\|_{\rm HS}^2.
+\mathrm{Var}_{\Phi_s}(d\Gamma(B))
+=\mathrm{Tr}\bigl[P_sB(I-P_s)B\bigr]
+=\Vert (I-P_s)BP_s\Vert _{\rm HS}^2.
 ```
 
-The matrix on the right has rank at most both $`m`$ and $`N-m`$, and operator norm at most $`\|B\|`$. Thus
+The matrix on the right has rank at most both $`m`$ and $`N-m`$, and operator norm at most $`\Vert B\Vert `$. Thus
 
 ```math
-\operatorname{Var}_{\Phi_s}(d\Gamma(B))
-\le \min(m,N-m)\|B\|^2.
+\mathrm{Var}_{\Phi_s}(d\Gamma(B))
+\le \min(m,N-m)\Vert B\Vert ^2.
 ```
 
 The endpoint Fubini–Study angle is at most the integrated path length. The half-trace distance between two pure states equals the sine of that angle and is at most the angle itself. Integration over $`s\in[0,1]`$ proves the claim, and applying the common unitary $`\Gamma_m(W)`$ leaves the distance unchanged.
 
 ## Deterministic sufficiency for arbitrary pure inputs
 
-For comparison, the same polar unitary has a weaker bound on the full fixed-number pure-state space. Put $`D=d\Gamma(B)`$. The normalized filtering path has speed $`\sqrt{\operatorname{Var}(D)}`$ for every pure state. The elementary estimates $`\|D\|\leq m\|B\|`$ and $`\operatorname{Var}(D)\leq\|D\|^2`$ therefore give
+For comparison, the same polar unitary has a weaker bound on the full fixed-number pure-state space. Put $`D=d\Gamma(B)`$. The normalized filtering path has speed $`\sqrt{\mathrm{Var}(D)}`$ for every pure state. The elementary estimates $`\Vert D\Vert \leq m\Vert B\Vert `$ and $`\mathrm{Var}(D)\leq\Vert D\Vert ^2`$ therefore give
 
 ```math
 D_{\mathrm{tr}}\!\left(
 \Gamma_m(W)|\psi\rangle\langle\psi|\Gamma_m(W)^\dagger,
-\frac{K|\psi\rangle\langle\psi|K^\dagger}{\|K\psi\|^2}
+\frac{K|\psi\rangle\langle\psi|K^\dagger}{\Vert K\psi\Vert ^2}
 \right)
 \leq\min\{1,m g(N-1)\}.
 ```
@@ -163,7 +163,7 @@ The Gaussian promise does not make the task easy at every nonreciprocity. At $`g
 
 ## Why the theorem does not extend by convexity
 
-The target $`\rho\mapsto K\rho K^\dagger/\operatorname{Tr}(K\rho K^\dagger)`$ reweights mixture components. It is not an affine map of the input state, so the pure-Slater bound cannot simply be averaged.
+The target $`\rho\mapsto K\rho K^\dagger/\mathrm{Tr}(K\rho K^\dagger)`$ reweights mixture components. It is not an affine map of the input state, so the pure-Slater bound cannot simply be averaged.
 
 For a direct counterexample, let $`x,y`$ be the minimum and maximum right singular Slaters of $`K`$, and let $`\kappa=\sigma_{\max}(K)/\sigma_{\min}(K)`$. For
 

@@ -4,7 +4,7 @@
 
 The question here is how one known nonunitary fermionic propagator can act on **one unknown input specimen**. The required output is the normalized whole state, with a uniform conditional trace-distance guarantee. A classical description of the input, additional copies, and a preparation or reflection oracle are not supplied.
 
-For the uniform open Hatano–Nelson chain, at fixed filling and the stated ballistic time, fix $`0<\epsilon<1/4`$ and $`0<p_0<1`$. The asymmetry scales for conditional trace error at most $`\epsilon`$ and worst-input success at least $`p_0`$ differ:
+For the uniform open Hatano–Nelson chain, at fixed filling and the stated ballistic time, fix $`0\lt \epsilon\lt 1/4`$ and $`0\lt p_0\lt 1`$. The asymmetry scales for conditional trace error at most $`\epsilon`$ and worst-input success at least $`p_0`$ differ:
 
 | Input promise | Asymmetry scale for fixed accuracy and nonvanishing worst-input success | Supported implementation or obstruction |
 | --- | --- | --- |

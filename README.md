@@ -53,6 +53,10 @@ For unrestricted correlated inputs, the finite dynamics estimate gives $`\log\ka
 
 The [connected scientific route](science/README.md) and [LLM reading guide](llms.txt) give complementary entry points.
 
+## Learn the result
+
+The [learning route](learning/README.md) uses John Watrous, *The Theory of Quantum Information* (2018), as its educational anchor. Start with the [source bridge](learning/WATROUS_BRIDGE.md) and the [four-mode worked experiment](learning/WORKED_EXAMPLE.md), then follow the [30 dependency-ordered milestones](learning/MILESTONES.md) through the complete argument.
+
 ## Reproduce the finite checks
 
 ```sh
