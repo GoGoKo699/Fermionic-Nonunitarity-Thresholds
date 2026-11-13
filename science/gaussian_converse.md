@@ -185,7 +185,7 @@ No equal-success assumption was imposed on the original simulator. Symmetrizatio
 Let binary relative entropy, with natural logarithms, be
 
 ```math
-d_{\mathrm B}(b\|q)
+d_{\mathrm B}(b\Vert q)
 =b\log\frac bq+(1-b)\log\frac{1-b}{1-q}.
 ```
 
@@ -193,9 +193,9 @@ The low-weight dimension is a fair-binomial lower tail. The weights $`\lambda_x`
 
 ```math
 \frac{D_L}{2^r}
-\leq e^{-r d_{\mathrm B}(b\|1/2)},
+\leq e^{-r d_{\mathrm B}(b\Vert 1/2)},
 \qquad
-R\leq e^{-r d_{\mathrm B}(b\|q_{\max})}.
+R\leq e^{-r d_{\mathrm B}(b\Vert q_{\max})}.
 ```
 
 The floor in $`L`$ needs no asymptotic replacement: $`|x|\leq\lfloor br\rfloor`$ implies $`|x|\leq br`$, and its complement is exactly $`|x|>br`$. Thus, whenever the displayed denominator is positive,
@@ -204,10 +204,10 @@ The floor in $`L`$ needs no asymptotic replacement: $`|x|\leq\lfloor br\rfloor`$
 \boxed{\displaystyle
 p_{\min}\leq
 \min\left\{1,\,
-\frac{e^{-r d_{\mathrm B}(b\|q_{\max})}}
+\frac{e^{-r d_{\mathrm B}(b\Vert q_{\max})}}
  {\left[
  \sqrt{1-\epsilon}
- -e^{-\frac r2d_{\mathrm B}(b\|1/2)}
+ -e^{-\frac r2d_{\mathrm B}(b\Vert 1/2)}
  \right]^2}
 \right\}.}
 ```
@@ -243,7 +243,7 @@ At fixed filling, $`r=\Theta(N)`$. Here $`p_{\mathrm{Sl}}^\star(\epsilon)=p^*_\e
 Fix $`g>0`$. Then $`\log(1/q_{\max,N})=\Theta_g(N)`$. Set $`b=1/4`$ for all sufficiently large $`N`$. Since
 
 ```math
-d_{\mathrm B}(b\|q)\geq b\log(1/q)-h_{\mathrm B}(b),
+d_{\mathrm B}(b\Vert q)\geq b\log(1/q)-h_{\mathrm B}(b),
 \qquad
 h_{\mathrm B}(b)=-b\log b-(1-b)\log(1-b),
 ```

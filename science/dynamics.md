@@ -25,7 +25,7 @@ The propagator on the fixed-number sector is its exterior power:
 K_{N,m}(t)=\bigwedge\nolimits^m U_g(t).
 ```
 
-All norms below are operator two-norms. For an invertible matrix $`A`$, write $`\kappa(A)=\|A\|\|A^{-1}\|`$. Singular values are in descending order.
+All norms below are operator two-norms. For an invertible matrix $`A`$, write $`\kappa(A)=\Vert A\Vert \Vert A^{-1}\Vert `$. Singular values are in descending order.
 
 Use the following numerical constants and finite-size quantities:
 
@@ -116,7 +116,7 @@ The matrix $`U_0(t)`$ is unitary. On the fixed-number sector, $`S_{g,m}=\bigwedg
 ```math
 \kappa(S_{g,m})=e^{g m(N-m)},
 \qquad
-\|K_{N,m}(t)\|\leq e^{g m(N-m)}.
+\Vert K_{N,m}(t)\Vert \leq e^{g m(N-m)}.
 ```
 
 The same estimate holds for the inverse. Hence, at every time,
@@ -151,7 +151,7 @@ Thus $`s_j\geq1`$ for $`j\leq\lfloor N/2\rfloor`$, and a possible middle singula
 The singular values of an exterior power are all products of the corresponding number of distinct one-particle singular values. In particular,
 
 ```math
-\left\|\bigwedge\nolimits^m U_g(t)\right\|
+\left\Vert \bigwedge\nolimits^m U_g(t)\right\Vert 
  =\prod_{j=1}^m s_j
  =\prod_{j=1}^{q_{N,m}}s_j.
 ```
@@ -161,7 +161,7 @@ The second equality follows by cancelling reciprocal pairs; it includes the empt
 The exterior power also satisfies $`\overline{K_{N,m}(t)}=K_{N,m}(t)^{-1}`$. Hence
 
 ```math
-\kappa(K_{N,m}(t))=\|K_{N,m}(t)\|^2.
+\kappa(K_{N,m}(t))=\Vert K_{N,m}(t)\Vert ^2.
 ```
 
 It remains to find sufficiently many large one-particle singular values.
@@ -194,7 +194,7 @@ This periodic calculation is a comparison tool. The theorem concerns the open-ch
 Let $`P_d(z)=\sum_{k=0}^d z^k/k!`$. Both open and periodic one-particle Hamiltonians obey
 
 ```math
-\|h_g\|,\ \|h_g^{\mathrm{per}}\|
+\Vert h_g\Vert ,\ \Vert h_g^{\mathrm{per}}\Vert 
  \leq J(e^g+e^{-g})
  \leq 2J\cosh g_{\max}.
 ```
@@ -202,7 +202,7 @@ Let $`P_d(z)=\sum_{k=0}^d z^k/k!`$. Both open and periodic one-particle Hamilton
 At $`t_N`$, the product of the last bound and time equals $`x_N`$. The exponential-series remainder therefore gives, for either Hamiltonian,
 
 ```math
-\left\|e^{-it_N h}-P_{d_N}(-it_N h)\right\|
+\left\Vert e^{-it_N h}-P_{d_N}(-it_N h)\right\Vert 
  \leq e^{x_N}\frac{x_N^{p_N}}{p_N!}
  =\eta_N.
 ```
@@ -226,7 +226,7 @@ U_g(t_N)
 \qquad
 \mathrm{rank}R_N\leq2d_N,
 \qquad
-\|E_N\|\leq2\eta_N.
+\Vert E_N\Vert \leq2\eta_N.
 ```
 
 The remainder is exponentially small with an explicit rate. Since $`p_N>\delta N`$ and $`x_N=\delta N/16\lt p_N/16`$, the elementary factorial inequality gives
@@ -244,7 +244,7 @@ The base $`e^{17/16}/16`$ is less than $`1/4`$, so $`\eta_N\lt 1/4`$ for all $`N
 
 ### 5. Singular-value interlacing and the lower bound
 
-We use the following elementary form of singular-value interlacing. If $`\mathrm{rank}R\leq r`$ and $`\|E\|\leq e`$, then
+We use the following elementary form of singular-value interlacing. If $`\mathrm{rank}R\leq r`$ and $`\Vert E\Vert \leq e`$, then
 
 ```math
 s_j(A+R+E)\geq s_{j+r}(A)-e,
@@ -262,7 +262,7 @@ s_j(U_g(t_N))\geq e^{B_N(g)}-2\eta_N.
 In the exterior-power norm, at most $`q_{N,m}\leq\lfloor N/2\rfloor`$ factors are needed. Every one of those factors is at least one by reciprocal pairing. At least $`L_{N,m}`$ factors also satisfy the last displayed bound. Therefore
 
 ```math
-\|K_{N,m}(t_N)\|
+\Vert K_{N,m}(t_N)\Vert 
  \geq\left(\max\{1,e^{B_N(g)}-2\eta_N\}\right)^{L_{N,m}}.
 ```
 

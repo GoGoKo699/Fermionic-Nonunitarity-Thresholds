@@ -18,7 +18,7 @@ p_{\min}=\inf_\psi p_\psi.
 
 A claim with $`p_{\min}>0`$ requires the conditional accuracy promise on every allowed pure input. If the worst success probability is zero, all upper bounds below are already satisfied.
 
-Throughout, trace distance means $`D(\rho,\sigma)=\tfrac12\|\rho-\sigma\|_1`$. Fidelity means the **root** fidelity $`F(\rho,\sigma)=\|\sqrt\rho\sqrt\sigma\|_1`$; thus pure-state fidelity is the absolute overlap, without squaring. Put
+Throughout, trace distance means $`D(\rho,\sigma)=\tfrac12\Vert \rho-\sigma\Vert _1`$. Fidelity means the **root** fidelity $`F(\rho,\sigma)=\Vert \sqrt\rho\sqrt\sigma\Vert _1`$; thus pure-state fidelity is the absolute overlap, without squaring. Put
 
 ```math
 \kappa=\frac{s_{\max}(K)}{s_{\min}(K)}\geq1.
@@ -51,7 +51,7 @@ Trace nonincrease now implies
 The worst success probability is at most $`s_{\min}(K)^2/s_{\max}(K)^2`$. Equality is attained by the one-Kraus filter
 
 ```math
-A=\frac{K}{\|K\|}.
+A=\frac{K}{\Vert K\Vert }.
 ```
 
 A unitary dilation realizes this contraction. Its efficient fermionic implementation is a separate [resource question](implementation.md); an abstract dilation alone would not establish a small circuit.

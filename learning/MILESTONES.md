@@ -129,7 +129,7 @@ The anchor supplies the quantum-information foundations. Exterior powers, Wick v
 
 **Phase:** Background/preliminaries.
 
-**Central question:** Why does specifying the normalized ray $`K|\psi\rangle/\|K\psi\|`$ leave a physical implementation incomplete?
+**Central question:** Why does specifying the normalized ray $`K|\psi\rangle/\Vert K\psi\Vert `$ leave a physical implementation incomplete?
 
 **Understanding target:** Separate the linear, subnormalized success output from its normalized conditional state. Define uniform conditional error and worst-input success, including the consequence of a zero-success promised input.
 
@@ -147,7 +147,7 @@ The anchor supplies the quantum-information foundations. Exterior powers, Wick v
 
 **Central question:** How does conditional state accuracy constrain the statistics of a subsequent measurement?
 
-**Understanding target:** Use half-trace distance $`D=\tfrac12\|\rho-\sigma\|_1`$ and root fidelity $`F=\|\sqrt\rho\sqrt\sigma\|_1`$. Explain their pure-state meanings and the direction of fidelity monotonicity under channels and measurements.
+**Understanding target:** Use half-trace distance $`D=\tfrac12\Vert \rho-\sigma\Vert _1`$ and root fidelity $`F=\Vert \sqrt\rho\sqrt\sigma\Vert _1`$. Explain their pure-state meanings and the direction of fidelity monotonicity under channels and measurements.
 
 **Dependencies and story role:** Uses [M02](#m02), [M05](#m05), and [M06](#m06). It connects output accuracy to a testable information statement.
 
@@ -269,7 +269,7 @@ and distinguish a finite inequality with an explicit remainder from an asymptoti
 
 **Central question:** How do real hopping coefficients let a supply of large one-particle singular values control the entire fixed-number propagator?
 
-**Understanding target:** Explain $`\overline U=U^{-1}`$, reciprocal singular pairs, products of singular values in exterior powers, and $`\kappa(K)=\|K\|^2`$. Reduce the needed product to $`\min(m,N-m)`$ factors.
+**Understanding target:** Explain $`\overline U=U^{-1}`$, reciprocal singular pairs, products of singular values in exterior powers, and $`\kappa(K)=\Vert K\Vert ^2`$. Reduce the needed product to $`\min(m,N-m)`$ factors.
 
 **Dependencies and story role:** Uses [M01](#m01), [M03](#m03), and [M13](#m13). It prepares the exact transfer from a local mode estimate to the many-body condition number.
 
@@ -315,7 +315,7 @@ U_{\mathrm{open}}
 \quad
 \mathrm{rank}R_N\leq2d_N,
 \quad
-\|E_N\|\leq2\eta_N.
+\Vert E_N\Vert \leq2\eta_N.
 ```
 
 **Dependencies and story role:** Uses [M01](#m01), [M11](#m11), and [M15](#m15). It isolates the exact boundary mechanism before applying a global spectral estimate.

@@ -42,7 +42,7 @@ A reported overlap of $`0.9`$ is therefore root fidelity $`0.9`$, squared fideli
 
 ## Bridge 1: a normalized filter is a conditional experiment
 
-The project specifies a known invertible many-body operator $`K`$ and asks for the normalized ray $`K\psi/\|K\psi\|`$. That formula does not describe a deterministic linear channel.
+The project specifies a known invertible many-body operator $`K`$ and asks for the normalized ray $`K\psi/\Vert K\psi\Vert `$. That formula does not describe a deterministic linear channel.
 
 Choose an accepted operator $`F=K/C`$ with $`F^\dagger F\preceq I`$, and set $`G=\sqrt{I-F^\dagger F}`$. A complete physical description can retain a classical flag:
 
@@ -55,7 +55,7 @@ Choose an accepted operator $`F=K/C`$ with $`F^\dagger F\preceq I`$, and set $`G
 It is trace preserving because $`F^\dagger F+G^\dagger G=I`$. The accepted branch has probability
 
 ```math
-p_\psi=\|F\psi\|^2.
+p_\psi=\Vert F\psi\Vert ^2.
 ```
 
 Only after conditioning on that branch does the desired normalized output appear. Keeping the failure branch is essential when applying information monotonicity: throwing it away and declaring every attempt successful changes the experiment.
@@ -93,7 +93,7 @@ The project-specific identity for a pure Slater with occupied projector $`P`$ is
 ```math
 \mathrm{Var}(d\Gamma(B))
 =\mathrm{Tr}[PB(I-P)B]
-\le\min(m,N-m)\|B\|^2.
+\le\min(m,N-m)\Vert B\Vert ^2.
 ```
 
 Integrating its square-root speed gives a uniform pure-Slater error bound. General correlated inputs can have larger collective fluctuations. This is where the input promise enters the positive theorem; it is not a restriction on the controls allowed in the converse.

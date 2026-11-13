@@ -23,7 +23,7 @@ This is an approximate input-promise separation. The Slater statement is stronge
 
 ## Why correlations affect the boundary
 
-In polar coordinates $`U=W e^B`$, the nonunitary part on the fixed-number sector is $`e^{d\Gamma(B)}`$. The one-particle logarithmic distortion has size at most $`g(N-1)`$. For a Slater, Wick's rule bounds the variance of $`d\Gamma(B)`$ by $`\min(m,N-m)\|B\|^2`$. The resulting normalized-state path has length at most $`\sqrt{\min(m,N-m)}\,g(N-1)`$.
+In polar coordinates $`U=W e^B`$, the nonunitary part on the fixed-number sector is $`e^{d\Gamma(B)}`$. The one-particle logarithmic distortion has size at most $`g(N-1)`$. For a Slater, Wick's rule bounds the variance of $`d\Gamma(B)`$ by $`\min(m,N-m)\Vert B\Vert ^2`$. The resulting normalized-state path has length at most $`\sqrt{\min(m,N-m)}\,g(N-1)`$.
 
 An arbitrary correlated superposition is not constrained by this Slater variance law. The extremal-singular-vector test in [heralding](heralding.md) can turn two almost parallel inputs into orthogonal targets. A physical instrument can accomplish that separation only with a correspondingly small success probability. The [dynamics proof](dynamics.md) establishes enough singular spread at an actual prescribed time for this argument to be consequential.
 

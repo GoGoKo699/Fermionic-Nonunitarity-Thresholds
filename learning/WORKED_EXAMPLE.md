@@ -122,7 +122,7 @@ D(\psi_{s_1,s_2},\omega_{s_1,s_2})
 The uniform theorem for **every** pure two-particle Slater gives the valid upper bound
 
 ```math
-\sqrt{\min(2,4-2)}\,\|B\|
+\sqrt{\min(2,4-2)}\,\Vert B\Vert 
 =\frac{\log2}{\sqrt2}
 \approx0.490129.
 ```
@@ -145,7 +145,7 @@ The input overlap and normalized target outputs are
 ```math
 \langle\chi_+|\chi_-\rangle=\frac{15}{17},
 \qquad
-\frac{K|\chi_\pm\rangle}{\|K\chi_\pm\|}
+\frac{K|\chi_\pm\rangle}{\Vert K\chi_\pm\Vert }
 =\frac{x\pm y}{\sqrt2}.
 ```
 

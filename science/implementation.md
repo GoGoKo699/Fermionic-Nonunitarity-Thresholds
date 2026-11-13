@@ -94,18 +94,18 @@ Adjacent-mode Givens rotations have constant-size occupation-qubit realizations.
 Absolute approximation to a subnormalized operator is not automatically conditional accuracy. If $`\widetilde F_m`$ is one accepted Kraus operator with
 
 ```math
-\|\widetilde F_m-F_m\|\le\delta,
+\Vert \widetilde F_m-F_m\Vert \le\delta,
 ```
 
 then for any unit vector $`\psi`$,
 
 ```math
-\left\|
-\frac{\widetilde F_m\psi}{\|\widetilde F_m\psi\|}
+\left\Vert 
+\frac{\widetilde F_m\psi}{\Vert \widetilde F_m\psi\Vert }
 -
-\frac{F_m\psi}{\|F_m\psi\|}
-\right\|
-\le\frac{2\delta}{\|F_m\psi\|}
+\frac{F_m\psi}{\Vert F_m\psi\Vert }
+\right\Vert 
+\le\frac{2\delta}{\Vert F_m\psi\Vert }
 \le\frac{2\delta}{\mu}.
 ```
 
@@ -135,7 +135,7 @@ Exact singular vectors and a promise of separated singular values are unnecessar
 \widehat U
 =\widetilde V\mathrm{diag}(\widetilde s_j)\widetilde R^\dagger,
 \qquad
-\|\widehat U-U\|\le\eta.
+\Vert \widehat U-U\Vert \le\eta.
 ```
 
 This is an approximate factorization of the matrix itself. Degenerate singular subspaces may use any orthonormal basis. Let $`\widehat C=\prod_j\max(1,\widetilde s_j)`$ and let $`\widehat F_m=\bigwedge^m\widehat U/\widehat C`$ be its exact filter.
@@ -143,8 +143,8 @@ This is an approximate factorization of the matrix itself. Degenerate singular s
 For $`\eta\le1/(2N)`$, telescoping the tensor products and restricting to the exterior sector gives
 
 ```math
-\left\|\bigwedge^m\widehat U-\bigwedge^mU\right\|
-\le m\max(\|U\|,\|\widehat U\|)^{m-1}\eta
+\left\Vert \bigwedge^m\widehat U-\bigwedge^mU\right\Vert 
+\le m\max(\Vert U\Vert ,\Vert \widehat U\Vert )^{m-1}\eta
 \le N e^{am+1}\eta.
 ```
 
@@ -156,11 +156,11 @@ Singular-value perturbation gives $`|\widetilde s_j-s_j|\le\eta`$. The scalar fu
 |C/\widehat C-1|\le2N\eta.
 ```
 
-Because $`\|F_m\|\le1`$ and $`\widehat C\ge1`$,
+Because $`\Vert F_m\Vert \le1`$ and $`\widehat C\ge1`$,
 
 ```math
 \boxed{
-\|\widehat F_m-F_m\|
+\Vert \widehat F_m-F_m\Vert 
 \le N(e^{am+1}+2)\eta.
 }
 ```
@@ -203,10 +203,10 @@ This is neither an oracle for an unknown matrix nor a claim that arbitrary uncom
 
 ## Deterministic polar-unitary compilation
 
-For the [pure-Slater approximation](gaussian_approximation.md), compile only $`\Gamma_m(W)`$, where $`W`$ is the known one-particle polar factor. If $`\widetilde W`$ is unitary and $`\|\widetilde W-W\|\le\xi`$, then
+For the [pure-Slater approximation](gaussian_approximation.md), compile only $`\Gamma_m(W)`$, where $`W`$ is the known one-particle polar factor. If $`\widetilde W`$ is unitary and $`\Vert \widetilde W-W\Vert \le\xi`$, then
 
 ```math
-\left\|\bigwedge^m\widetilde W-\bigwedge^mW\right\|\le m\xi.
+\left\Vert \bigwedge^m\widetilde W-\bigwedge^mW\right\Vert \le m\xi.
 ```
 
 Thus an additional output tolerance $`\zeta`$ is met by one-particle unitary accuracy $`O(\zeta/m)`$ and a corresponding gate-synthesis budget. Invertibility with $`\sigma_{\min}(U)\ge e^{-a}`$ controls the polar computation; arbitrary singular-value gaps need not be resolved. Polynomial-precision matrix arithmetic and $`O(N^2)`$ Givens rotations give a polynomial circuit. It always succeeds and uses no nonunitary filter or postselection helpers.

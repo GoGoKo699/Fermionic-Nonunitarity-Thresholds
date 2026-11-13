@@ -48,7 +48,7 @@ One unknown normalized pure specimen $`|\psi\rangle\in\mathcal F_m`$ is supplied
 
 ```math
 |\Psi_K(\psi)\rangle
-=\frac{K|\psi\rangle}{\|K|\psi\rangle\|},
+=\frac{K|\psi\rangle}{\Vert K|\psi\rangle\Vert },
 \qquad K=K_{N,m}(t_N).
 ```
 
@@ -69,7 +69,7 @@ For each promised input with positive success probability, require conditional h
 D\!\left(\rho_{\mathcal S|\mathrm{succ}}(\psi),
 |\Psi_K(\psi)\rangle\langle\Psi_K(\psi)|\right)\leq\epsilon,
 \qquad
-D(\rho,\sigma)=\frac12\|\rho-\sigma\|_1.
+D(\rho,\sigma)=\frac12\Vert \rho-\sigma\Vert _1.
 ```
 
 Take a fixed $`0\lt \epsilon\lt 1/2`$ for the common statements. Define
