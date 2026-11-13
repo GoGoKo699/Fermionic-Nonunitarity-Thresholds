@@ -1,0 +1,302 @@
+{
+  "assertion_tolerance": 5e-10,
+  "groups": {
+    "Gaussian_helper_filter": {
+      "cases": [
+        {
+          "N": 4,
+          "log_conservative_success_lower": -7.2,
+          "log_worst_success": -1.0541466027,
+          "m": 2,
+          "normalizer": 1.3015249958
+        },
+        {
+          "N": 5,
+          "log_conservative_success_lower": -16.8,
+          "log_worst_success": -2.2714813916,
+          "m": 2,
+          "normalizer": 1.7645052649
+        },
+        {
+          "N": 6,
+          "log_conservative_success_lower": -36.0,
+          "log_worst_success": -4.4578215831,
+          "m": 3,
+          "normalizer": 3.0479078236
+        }
+      ],
+      "hole_attenuation_factors": 7,
+      "max_global_filter_residual": 3.5301682287e-15,
+      "max_half_filling_log_normalizer_residual": 2.2204460493e-16,
+      "max_helper_unitarity_residual": 2.2367862806e-16,
+      "max_local_kraus_residual": 0.0,
+      "particle_attenuation_factors": 8,
+      "status": "passed"
+    },
+    "Slater_discrimination_family": {
+      "actual_high_weight_tail": 0.079281424,
+      "attained_product_measurement_probability": 0.7772750892,
+      "confidence_pairs": 5,
+      "covariant_seeds_checked": 9,
+      "hard_family_size": 8,
+      "hard_pairs": 3,
+      "high_confidence_seeds_checked": 2,
+      "low_dimension_fraction": 0.1875,
+      "max_Cauchy_split_excess": 0.0,
+      "max_PSD_correct_weight_bound_excess": 5.5511151231e-17,
+      "max_confidence_inversion_excess": 0.0,
+      "max_output_orthogonality_residual": 8.1569419176e-16,
+      "minimum_tensor_dual_eigenvalue": 4.0465093231e-17,
+      "product_Helstrom_probability": 0.7772750892,
+      "status": "passed"
+    },
+    "Wick_and_polar_approximation": {
+      "cases": [
+        {
+          "N": 4,
+          "bound": 0.015656838638,
+          "g": 0.01,
+          "m": 2,
+          "polar_trace_error": 0.0081474724685,
+          "trial": 0
+        },
+        {
+          "N": 4,
+          "bound": 0.015656838638,
+          "g": 0.01,
+          "m": 2,
+          "polar_trace_error": 0.010876989655,
+          "trial": 1
+        },
+        {
+          "N": 4,
+          "bound": 0.015656838638,
+          "g": 0.01,
+          "m": 2,
+          "polar_trace_error": 0.0079880217983,
+          "trial": 2
+        },
+        {
+          "N": 4,
+          "bound": 0.015656838638,
+          "g": 0.01,
+          "m": 2,
+          "polar_trace_error": 0.0051855070046,
+          "trial": 3
+        },
+        {
+          "N": 5,
+          "bound": 0.072778973667,
+          "g": 0.05,
+          "m": 2,
+          "polar_trace_error": 0.03719365457,
+          "trial": 0
+        },
+        {
+          "N": 5,
+          "bound": 0.072778973667,
+          "g": 0.05,
+          "m": 2,
+          "polar_trace_error": 0.049259429149,
+          "trial": 1
+        },
+        {
+          "N": 5,
+          "bound": 0.072778973667,
+          "g": 0.05,
+          "m": 2,
+          "polar_trace_error": 0.036351780118,
+          "trial": 2
+        },
+        {
+          "N": 5,
+          "bound": 0.072778973667,
+          "g": 0.05,
+          "m": 2,
+          "polar_trace_error": 0.048597441106,
+          "trial": 3
+        },
+        {
+          "N": 6,
+          "bound": 0.23388401494,
+          "g": 0.15,
+          "m": 3,
+          "polar_trace_error": 0.11691426608,
+          "trial": 0
+        },
+        {
+          "N": 6,
+          "bound": 0.23388401494,
+          "g": 0.15,
+          "m": 3,
+          "polar_trace_error": 0.1368489738,
+          "trial": 1
+        },
+        {
+          "N": 6,
+          "bound": 0.23388401494,
+          "g": 0.15,
+          "m": 3,
+          "polar_trace_error": 0.12337766866,
+          "trial": 2
+        },
+        {
+          "N": 6,
+          "bound": 0.23388401494,
+          "g": 0.15,
+          "m": 3,
+          "polar_trace_error": 0.14148420161,
+          "trial": 3
+        }
+      ],
+      "max_Wick_vs_full_Fock_variance_residual": 1.0408340856e-17,
+      "max_normalized_path_vs_Slater_trace_distance": 6.3317873394e-16,
+      "max_polar_trace_bound_excess": 0.0,
+      "status": "passed"
+    },
+    "boundary_rank_and_tail": {
+      "cases": [
+        {
+          "N": 9,
+          "degree": 2,
+          "g": 0.2,
+          "observed_tail": 0.0024427567068,
+          "rank": 4,
+          "rank_bound": 4,
+          "tail_bound": 0.0031238523874,
+          "time_Jt": 0.12,
+          "uses_actual_theorem_time": false
+        },
+        {
+          "N": 12,
+          "degree": 3,
+          "g": 0.4,
+          "observed_tail": 0.00095398372303,
+          "rank": 6,
+          "rank_bound": 6,
+          "tail_bound": 0.0014107146979,
+          "time_Jt": 0.18,
+          "uses_actual_theorem_time": false
+        },
+        {
+          "N": 16,
+          "degree": 4,
+          "g": 0.7,
+          "observed_tail": 6.2997792448e-05,
+          "rank": 8,
+          "rank_bound": 8,
+          "tail_bound": 9.1932686616e-05,
+          "time_Jt": 0.15,
+          "uses_actual_theorem_time": false
+        },
+        {
+          "N": 24,
+          "degree": 0,
+          "g": 0.3,
+          "observed_tail": 0.012492322294,
+          "rank": 0,
+          "rank_bound": 0,
+          "tail_bound": 0.012649442527,
+          "time_Jt": 0.0059752909499,
+          "uses_actual_theorem_time": true
+        }
+      ],
+      "max_interior_column_norm": 0.0,
+      "max_interlacing_excess": 0.0,
+      "max_tail_bound_excess": 0.0,
+      "status": "passed"
+    },
+    "exterior_CAR_evolution": {
+      "cases": [
+        {
+          "N": 4,
+          "fock_dimension": 6,
+          "g": 0.2,
+          "log_condition": 0.52707330136,
+          "m": 2,
+          "time_Jt": 0.6
+        },
+        {
+          "N": 5,
+          "fock_dimension": 10,
+          "g": 0.3,
+          "log_condition": 1.1357406958,
+          "m": 2,
+          "time_Jt": 0.7
+        },
+        {
+          "N": 6,
+          "fock_dimension": 15,
+          "g": 0.4,
+          "log_condition": 1.9546039536,
+          "m": 2,
+          "time_Jt": 0.8
+        },
+        {
+          "N": 6,
+          "fock_dimension": 20,
+          "g": 0.2,
+          "log_condition": 1.2240521096,
+          "m": 3,
+          "time_Jt": 0.9
+        }
+      ],
+      "max_condition_identity_residual": 6.6613381478e-16,
+      "max_exterior_vs_direct_fock_norm": 1.0264363628e-15,
+      "max_reciprocal_log_residual": 3.60822483e-16,
+      "status": "passed"
+    },
+    "weak_asymmetry_illustration": {
+      "beta": 1.0,
+      "cases": [
+        {
+          "N": 12,
+          "g": 0.083333333333,
+          "log_half_filled_condition": 2.0720404375,
+          "log_half_filled_condition_per_N": 0.17267003646,
+          "log_oneparticle_condition": 0.57824178163
+        },
+        {
+          "N": 24,
+          "g": 0.041666666667,
+          "log_half_filled_condition": 4.1284035623,
+          "log_half_filled_condition_per_N": 0.17201681509,
+          "log_oneparticle_condition": 0.59325181801
+        },
+        {
+          "N": 36,
+          "g": 0.027777777778,
+          "log_half_filled_condition": 6.1674393646,
+          "log_half_filled_condition_per_N": 0.17131776013,
+          "log_oneparticle_condition": 0.59670259804
+        },
+        {
+          "N": 48,
+          "g": 0.020833333333,
+          "log_half_filled_condition": 8.1998522256,
+          "log_half_filled_condition_per_N": 0.1708302547,
+          "log_oneparticle_condition": 0.59803972909
+        },
+        {
+          "N": 64,
+          "g": 0.015625,
+          "log_half_filled_condition": 10.905182472,
+          "log_half_filled_condition_per_N": 0.17039347613,
+          "log_oneparticle_condition": 0.59884463856
+        }
+      ],
+      "conservative_theorem_time_coefficient_at_gmax_1": 0.00020251696052,
+      "illustrative_time_coefficient": 0.15,
+      "max_reciprocal_log_residual": 1.9151347175e-15,
+      "purpose": "finite illustrative conditioning, not an asymptotic proof",
+      "status": "passed",
+      "uses_conservative_theorem_time": false
+    }
+  },
+  "numpy_version": "2.3.5",
+  "scipy_version": "1.17.0",
+  "scope": "Deterministic finite scientific checks; analytical proofs establish all-size and asymptotic claims.",
+  "script_sha256": "5065f785bb17320b8a6625a4af070a40da85518925a9ceafcf10c00e5340a0b6",
+  "seed": 20261113,
+  "status": "passed"
+}
