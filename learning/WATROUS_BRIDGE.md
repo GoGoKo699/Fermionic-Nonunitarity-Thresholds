@@ -91,8 +91,8 @@ Write the polar decomposition as $`U=We^B`$. The unitary part $`\Gamma_m(W)`$ is
 The project-specific identity for a pure Slater with occupied projector $`P`$ is
 
 ```math
-\operatorname{Var}(d\Gamma(B))
-=\operatorname{Tr}[PB(I-P)B]
+\mathrm{Var}(d\Gamma(B))
+=\mathrm{Tr}[PB(I-P)B]
 \le\min(m,N-m)\|B\|^2.
 ```
 

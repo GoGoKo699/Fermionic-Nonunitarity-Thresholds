@@ -2,18 +2,18 @@
 
 This finite example follows a supplied quantum input through a known filter, a success flag and a final measurement. It also shows why the input promise matters. **The diagonal matrix below is a teaching toy, not the uniform Hatano–Nelson propagator.** It proves no chain-length threshold or asymptotic exponent.
 
-Use four fermionic modes and exactly two particles. Write $`|ij\rangle=e_i\wedge e_j`$ for $`i<j`$. The six occupation states span the sector.
+Use four fermionic modes and exactly two particles. Write $`|ij\rangle=e_i\wedge e_j`$ for $`i\lt j`$. The six occupation states span the sector.
 
 ## 1. Specify the known transformation
 
 Choose the positive one-particle matrix
 
 ```math
-U=\operatorname{diag}
+U=\mathrm{diag}
 \left(\sqrt2,\frac1{\sqrt2},\sqrt2,\frac1{\sqrt2}\right).
 ```
 
-Its polar unitary is $`W=I`$. Put $`b=\frac12\log2`$, so its positive logarithm is $`B=\operatorname{diag}(b,-b,b,-b)`$. The two-particle map is $`K=\bigwedge^2U`$: each occupation amplitude is multiplied by the product of its occupied one-particle factors.
+Its polar unitary is $`W=I`$. Put $`b=\frac12\log2`$, so its positive logarithm is $`B=\mathrm{diag}(b,-b,b,-b)`$. The two-particle map is $`K=\bigwedge^2U`$: each occupation amplitude is multiplied by the product of its occupied one-particle factors.
 
 | Occupation | $`K`$ amplitude | Accepted $`F=K/2`$ amplitude | Success probability on that occupation |
 |---|---:|---:|---:|
@@ -38,8 +38,8 @@ Apply these four one-mode filters in the occupation basis:
 
 | Mode | Filter on $`(\lvert0\rangle,\lvert1\rangle)`$ | Supplied helper | Accepted helper outcome |
 |---|---|---|---|
-| 1 and 3 | $`\operatorname{diag}(1/\sqrt2,1)`$ | Occupied | Occupied |
-| 2 and 4 | $`\operatorname{diag}(1,1/\sqrt2)`$ | Empty | Empty |
+| 1 and 3 | $`\mathrm{diag}(1/\sqrt2,1)`$ | Occupied | Occupied |
+| 2 and 4 | $`\mathrm{diag}(1,1/\sqrt2)`$ | Empty | Empty |
 
 Each is a beam-splitter interaction with angle $`\pi/4`$ and its helper, followed by occupation measurement. The first type attenuates a hole; the second attenuates a particle. Accept only if all four helper outcomes match the last column. The accepted data operator is exactly $`F=K/2`$.
 

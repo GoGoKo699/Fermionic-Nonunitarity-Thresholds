@@ -313,7 +313,7 @@ H_N=
 U_{\mathrm{open}}
 =U_{\mathrm{per}}+R_N+E_N,
 \quad
-\operatorname{rank}R_N\leq2d_N,
+\mathrm{rank}R_N\leq2d_N,
 \quad
 \|E_N\|\leq2\eta_N.
 ```
@@ -371,7 +371,7 @@ Explain the lower factor $`\max\{1,e^{B_N(g)}-2\eta_N\}`$, reciprocal pairing, a
 
 **Central question:** Why does allowing a fixed conditional error still leave a conditioning-dependent success penalty?
 
-**Understanding target:** Construct the extremal nearly parallel input pair, show that its ideal outputs are orthogonal, and include failures before applying fidelity monotonicity. Obtain the factor $`1-2\sqrt{\epsilon(1-\epsilon)}`$ for $`0<\epsilon<1/2`$ and recognize the bound's worst-input meaning.
+**Understanding target:** Construct the extremal nearly parallel input pair, show that its ideal outputs are orthogonal, and include failures before applying fidelity monotonicity. Obtain the factor $`1-2\sqrt{\epsilon(1-\epsilon)}`$ for $`0\lt \epsilon\lt 1/2`$ and recognize the bound's worst-input meaning.
 
 **Dependencies and story role:** Uses [M07](#m07), [M08](#m08), and [M18](#m18). It strengthens the exact statement to the approximation criterion used in the central comparison.
 
@@ -483,7 +483,7 @@ Explain the lower factor $`\max\{1,e^{B_N(g)}-2\eta_N\}`$, reciprocal pairing, a
 
 **Central question:** Which property of Slaters reduces the accumulated normalized-state distortion?
 
-**Understanding target:** Use Wick's identity to express variance as $`\operatorname{Tr}[PB(I-P)B]`$, bound its rank by $`\min(m,N-m)`$, and integrate the path speed. Compare the resulting square-root particle-number factor with the unrestricted pure-state norm bound.
+**Understanding target:** Use Wick's identity to express variance as $`\mathrm{Tr}[PB(I-P)B]`$, bound its rank by $`\min(m,N-m)`$, and integrate the path speed. Compare the resulting square-root particle-number factor with the unrestricted pure-state norm bound.
 
 **Dependencies and story role:** Uses [M10](#m10), [M13](#m13), and [M25](#m25). It identifies the specific mathematical reason the positive approximation distinguishes the promises.
 

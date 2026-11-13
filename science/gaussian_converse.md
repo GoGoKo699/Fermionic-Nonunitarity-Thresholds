@@ -4,7 +4,7 @@ The [all-input filtering converse](heralding.md) uses a superposition of two ext
 
 The simulator receives **one unknown Slater specimen**, without its occupied-orbital description, a preparation oracle, or extra copies. The success map may nevertheless use arbitrary ancillas, non-Gaussian operations, measurements, and feedback. The converse therefore does not restrict the receiver to Gaussian processing.
 
-Accuracy is conditional half-trace distance at most $`0<\epsilon<1/2`$ on every allowed input. Success may depend on the input, and $`p_{\min}`$ denotes its infimum over all Slaters in the fixed-number sector.
+Accuracy is conditional half-trace distance at most $`0\lt \epsilon\lt 1/2`$ on every allowed input. Success may depend on the input, and $`p_{\min}`$ denotes its infimum over all Slaters in the fixed-number sector.
 
 ## Finite singular-mode assumptions
 
@@ -101,7 +101,7 @@ p_{\min}\leq
 \min\left\{1,\frac{\prod_{j=1}^r h(q_j)}{1-\epsilon}\right\}.}
 ```
 
-In particular, if $`q_j\leq q_{\max}<1/2`$, then
+In particular, if $`q_j\leq q_{\max}\lt 1/2`$, then
 
 ```math
 p_{\min}\leq
@@ -125,7 +125,7 @@ The inputs form the orbit $`|\Psi_s\rangle=Z_s|\Psi_0\rangle`$ of the phase grou
 Let its conclusive effects be $`E_s=Z_sE_0Z_s`$. Compression to the hard subspace preserves
 
 ```math
-\sum_s E_s=d\,\operatorname{diag}(E_0)\preceq I.
+\sum_s E_s=d\,\mathrm{diag}(E_0)\preceq I.
 ```
 
 Writing $`a_x=d(E_0)_{xx}\in[0,1]`$, the two relevant probabilities are
@@ -140,7 +140,7 @@ Q=\langle\Psi_0|E_0|\Psi_0\rangle
 
 The inequality follows from positivity, $`|(E_0)_{xy}|\leq\sqrt{(E_0)_{xx}(E_0)_{yy}}`$.
 
-Choose any $`q_{\max}<b<1/2`$ and put
+Choose any $`q_{\max}\lt b\lt 1/2`$ and put
 
 ```math
 L=\{x:|x|\leq\lfloor br\rfloor\},
@@ -166,7 +166,7 @@ It follows that
 \leq\left(\sqrt{\frac{D_L}{d}p}+\sqrt R\right)^2.
 ```
 
-Whenever $`D_L/d<1-\epsilon`$, this yields the explicit finite bound
+Whenever $`D_L/d\lt 1-\epsilon`$, this yields the explicit finite bound
 
 ```math
 \boxed{\displaystyle
@@ -223,7 +223,7 @@ a_N=e^{\alpha N\sinh g}-2\eta_N,
 \qquad
 A_N=[H_N-2d_N]_+,
 \qquad
-0<\eta_N\leq e^{-\lambda N},
+0\lt \eta_N\leq e^{-\lambda N},
 ```
 
 Then at least $`A_N`$ open-chain singular values are at least $`a_N`$. Reciprocal pairing supplies the matching low singular values. Whenever $`a_N>1`$, choose
@@ -270,7 +270,7 @@ Fix $`\beta>0`$. Now
 a_N\longrightarrow e^{\alpha\beta}>1,
 \qquad
 q_{\max,N}\longrightarrow
-q_\beta=\frac{1}{1+e^{4\alpha\beta}}<\frac12.
+q_\beta=\frac{1}{1+e^{4\alpha\beta}}\lt \frac12.
 ```
 
 The product Helstrom bound already yields $`p_{\min}\leq e^{-c_\beta N}`$. Equivalently, the rejection estimate works with any fixed $`b\in(q_\beta,1/2)`$ for sufficiently large $`N`$. The attenuation compiler gives the reverse exponential order, so
@@ -327,16 +327,16 @@ L_{\epsilon,p_0}
 =\log\frac{1}{(1-\epsilon)p_0}.
 ```
 
-Whenever $`a_N>1`$ and $`2\sqrt{L_{\epsilon,p_0}/r}<1`$, inversion gives
+Whenever $`a_N>1`$ and $`2\sqrt{L_{\epsilon,p_0}/r}\lt 1`$, inversion gives
 
 ```math
 \log a_N
 \leq
-\frac12\operatorname{artanh}
+\frac12\mathrm{artanh}
  \left(2\sqrt{\frac{L_{\epsilon,p_0}}r}\right).
 ```
 
-Since $`\eta_N<1/4`$, writing $`x=\alpha N\sinh g`$ gives
+Since $`\eta_N\lt 1/4`$, writing $`x=\alpha N\sinh g`$ gives
 
 ```math
 \log a_N
@@ -350,7 +350,7 @@ Since $`\sinh g\geq g`$, this yields the explicit necessary condition
 g
 \leq
 \frac{
-\frac12\operatorname{artanh}
+\frac12\mathrm{artanh}
  \left(2\sqrt{L_{\epsilon,p_0}/r}\right)
 +4\eta_N}
 {\alpha N}.

@@ -26,7 +26,7 @@ K_{N,m}(t)=e^{-it\widehat H_g}\big|_{\mathcal F_m}
 
 The equality follows by differentiating the action on exterior products; a finite check is included in the [verification suite](../verification/README.md). The space $`\mathcal F_m=\bigwedge^m\mathbb C^N`$ has dimension $`\binom Nm`$.
 
-All asymptotic claims use fixed filling: for some fixed $`0<\nu\leq1/2`$,
+All asymptotic claims use fixed filling: for some fixed $`0\lt \nu\leq1/2`$,
 
 ```math
 \nu N\leq m\leq(1-\nu)N.
@@ -57,7 +57,7 @@ The matrix $`K`$ is invertible. The normalization makes the requested state tran
 A simulator is a trace-nonincreasing completely positive success map $`\mathcal S`$. It may use arbitrary finite ancillas, measurements, feedback, discarded registers and success records. Its input-dependent success probability and conditional retained output are
 
 ```math
-p_{\mathcal S}(\psi)=\operatorname{Tr}\mathcal S(|\psi\rangle\langle\psi|),
+p_{\mathcal S}(\psi)=\mathrm{Tr}\mathcal S(|\psi\rangle\langle\psi|),
 \qquad
 \rho_{\mathcal S|\mathrm{succ}}(\psi)
 =\frac{\mathcal S(|\psi\rangle\langle\psi|)}{p_{\mathcal S}(\psi)}.
@@ -72,7 +72,7 @@ D\!\left(\rho_{\mathcal S|\mathrm{succ}}(\psi),
 D(\rho,\sigma)=\frac12\|\rho-\sigma\|_1.
 ```
 
-Take a fixed $`0<\epsilon<1/2`$ for the common statements. Define
+Take a fixed $`0\lt \epsilon\lt 1/2`$ for the common statements. Define
 
 ```math
 p^*_\epsilon(K;\mathcal P)

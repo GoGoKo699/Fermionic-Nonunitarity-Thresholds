@@ -11,7 +11,7 @@ The [model](model.md) supplies one unknown input specimen and a known invertible
 The input's classical description, a preparation oracle, and additional specimens are not supplied. The success operation may use arbitrary ancillas, measurements, classical records, and adaptive control. All such processing induces one completely positive, trace-nonincreasing map $`\mathcal T`$ on the supplied specimen. Write
 
 ```math
-p_\psi=\operatorname{Tr}\mathcal T(\psi),\qquad
+p_\psi=\mathrm{Tr}\mathcal T(\psi),\qquad
 \rho_\psi=\frac{\mathcal T(\psi)}{p_\psi},\qquad
 p_{\min}=\inf_\psi p_\psi.
 ```
@@ -64,7 +64,7 @@ The proposition is stated for all pure inputs. A promise restricted to Slater de
 
 ```math
 D(\rho_\psi,\tau_\psi)\leq\epsilon,
-\qquad 0<\epsilon<\frac12.
+\qquad 0\lt \epsilon\lt \frac12.
 ```
 
 Then every success map satisfies
@@ -111,18 +111,18 @@ r=|\langle\psi_+|\psi_-\rangle|
 
 Their ideal normalized outputs are orthogonal: their two left-singular-vector components have equal magnitude and opposite relative signs.
 
-Let $`\rho_+,\rho_-`$ be the actual successful outputs. Measuring the projector onto the positive ideal output gives probabilities $`a\geq1-\epsilon`$ and $`b\leq\epsilon`$. Fidelity cannot decrease under this binary measurement. Since $`a>b`$ for $`\epsilon<1/2`$,
+Let $`\rho_+,\rho_-`$ be the actual successful outputs. Measuring the projector onto the positive ideal output gives probabilities $`a\geq1-\epsilon`$ and $`b\leq\epsilon`$. Fidelity cannot decrease under this binary measurement. Since $`a>b`$ for $`\epsilon\lt 1/2`$,
 
 ```math
 \begin{aligned}
 F(\rho_+,\rho_-)
 &\leq \sqrt{ab}+\sqrt{(1-a)(1-b)}\\
 &\leq 2\sqrt{\epsilon(1-\epsilon)}
-=:f_\epsilon<1.
+=:f_\epsilon\lt 1.
 \end{aligned}
 ```
 
-The second inequality is attained at $`a=1-\epsilon,b=\epsilon`$. This direct binary-measurement argument permits the entire interval $`0<\epsilon<1/2`$.
+The second inequality is attained at $`a=1-\epsilon,b=\epsilon`$. This direct binary-measurement argument permits the entire interval $`0\lt \epsilon\lt 1/2`$.
 
 ### Include failures before applying information monotonicity
 
@@ -173,7 +173,7 @@ in that regime. Constants also depend on the fixed filling window, hopping cap, 
 
 For finite error, a small conditioning cost can be absorbed into an accurate deterministic approximation. The robust statement is therefore a logarithmic cost up to an additive $`O_\epsilon(1)`$, rather than a nonzero exponential penalty uniformly down to $`g_NN^2=0`$.
 
-At a fixed required success probability $`p_0>0`$ and fixed $`\epsilon<1/2`$, the all-input asymmetry scale is $`N^{-2}`$: a sufficiently small constant times $`N^{-2}`$ is sufficient by the [deterministic approximation](gaussian_approximation.md), while any uniformly accurate simulator with success at least $`p_0`$ must have $`g_N=O_{\epsilon,p_0}(N^{-2})`$. The analogous Slater-input scale is proved separately in the [Gaussian converse](gaussian_converse.md).
+At a fixed required success probability $`p_0>0`$ and fixed $`\epsilon\lt 1/2`$, the all-input asymmetry scale is $`N^{-2}`$: a sufficiently small constant times $`N^{-2}`$ is sufficient by the [deterministic approximation](gaussian_approximation.md), while any uniformly accurate simulator with success at least $`p_0`$ must have $`g_N=O_{\epsilon,p_0}(N^{-2})`$. The analogous Slater-input scale is proved separately in the [Gaussian converse](gaussian_converse.md).
 
 ## What success probability measures
 

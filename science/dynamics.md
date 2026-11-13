@@ -86,11 +86,11 @@ In particular, the following slightly weaker bound is convenient:
 The remainder obeys
 
 ```math
-0<\eta_N
+0\lt \eta_N
  \leq\left(\frac{e^{17/16}}{16}\right)^{p_N}
  \leq e^{-\lambda N},
 \qquad
-\eta_N<\frac14.
+\eta_N\lt \frac14.
 ```
 
 For $`g=0`$, the propagator is unitary and both upper and lower condition-number bounds equal zero after taking the logarithm. For $`m=0`$ or $`m=N`$, the sector has dimension one and the condition number is one. No positive-asymmetry asymptotic is imposed on these endpoints.
@@ -100,7 +100,7 @@ For $`g=0`$, the propagator is unitary and both upper and lower condition-number
 Let
 
 ```math
-S_g=\operatorname{diag}(e^{g},e^{2g},\ldots,e^{Ng}).
+S_g=\mathrm{diag}(e^{g},e^{2g},\ldots,e^{Ng}).
 ```
 
 Direct substitution gives
@@ -216,7 +216,7 @@ For completeness, the scalar majorant follows from
 \qquad x\geq0.
 ```
 
-The difference between the two degree-$`d_N`$ polynomials has rank at most $`2d_N`$. To see this, expand a matrix power as a sum over walks. An open and periodic walk of length at most $`d_N`$ can differ only if the periodic walk crosses the removed edge. Its input site must then lie among the first $`d_N`$ or last $`d_N`$ sites. Every other input column of the polynomial difference is zero. Since $`d_N<N/2`$, these boundary sets are disjoint. The argument also covers $`d_N=0`$, when the polynomial difference vanishes.
+The difference between the two degree-$`d_N`$ polynomials has rank at most $`2d_N`$. To see this, expand a matrix power as a sum over walks. An open and periodic walk of length at most $`d_N`$ can differ only if the periodic walk crosses the removed edge. Its input site must then lie among the first $`d_N`$ or last $`d_N`$ sites. Every other input column of the polynomial difference is zero. Since $`d_N\lt N/2`$, these boundary sets are disjoint. The argument also covers $`d_N=0`$, when the polynomial difference vanishes.
 
 Consequently,
 
@@ -224,12 +224,12 @@ Consequently,
 U_g(t_N)
  =U_g^{\mathrm{per}}(t_N)+R_N+E_N,
 \qquad
-\operatorname{rank}R_N\leq2d_N,
+\mathrm{rank}R_N\leq2d_N,
 \qquad
 \|E_N\|\leq2\eta_N.
 ```
 
-The remainder is exponentially small with an explicit rate. Since $`p_N>\delta N`$ and $`x_N=\delta N/16<p_N/16`$, the elementary factorial inequality gives
+The remainder is exponentially small with an explicit rate. Since $`p_N>\delta N`$ and $`x_N=\delta N/16\lt p_N/16`$, the elementary factorial inequality gives
 
 ```math
 \begin{aligned}
@@ -240,11 +240,11 @@ The remainder is exponentially small with an explicit rate. Since $`p_N>\delta N
 \end{aligned}
 ```
 
-The base $`e^{17/16}/16`$ is less than $`1/4`$, so $`\eta_N<1/4`$ for all $`N\geq3`$.
+The base $`e^{17/16}/16`$ is less than $`1/4`$, so $`\eta_N\lt 1/4`$ for all $`N\geq3`$.
 
 ### 5. Singular-value interlacing and the lower bound
 
-We use the following elementary form of singular-value interlacing. If $`\operatorname{rank}R\leq r`$ and $`\|E\|\leq e`$, then
+We use the following elementary form of singular-value interlacing. If $`\mathrm{rank}R\leq r`$ and $`\|E\|\leq e`$, then
 
 ```math
 s_j(A+R+E)\geq s_{j+r}(A)-e,
@@ -276,11 +276,11 @@ For the simpler bound, write
  \geq B_N(g)-4\eta_N.
 ```
 
-Here $`0\leq2\eta_N e^{-B_N(g)}<1/2`$, and $`\log(1-z)\geq-2z`$ on that interval. Combining with the exact lower bound of one for the relevant singular values proves the positive-part version. This completes the proof.
+Here $`0\leq2\eta_N e^{-B_N(g)}\lt 1/2`$, and $`\log(1-z)\geq-2z`$ on that interval. Combining with the exact lower bound of one for the relevant singular values proves the positive-part version. This completes the proof.
 
 ## Uniform bounds at finite filling
 
-Fix $`0<\nu\leq1/2`$ and restrict to nonempty integer sectors satisfying
+Fix $`0\lt \nu\leq1/2`$ and restrict to nonempty integer sectors satisfying
 
 ```math
 \nu N\leq m\leq(1-\nu)N.

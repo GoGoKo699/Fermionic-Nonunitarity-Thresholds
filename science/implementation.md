@@ -13,7 +13,7 @@ The account below applies that primitive to the present propagator, accommodates
 Take an SVD of the known one-particle propagator,
 
 ```math
-U=V\operatorname{diag}(s_1,\ldots,s_N)R^\dagger,
+U=V\mathrm{diag}(s_1,\ldots,s_N)R^\dagger,
 \qquad s_j>0.
 ```
 
@@ -22,8 +22,8 @@ In the occupation basis of its right singular modes, use the one-mode filters
 ```math
 f_j=
 \begin{cases}
-\operatorname{diag}(1,s_j),&s_j\le1,\\
-\operatorname{diag}(s_j^{-1},1),&s_j>1.
+\mathrm{diag}(1,s_j),&s_j\le1,\\
+\mathrm{diag}(s_j^{-1},1),&s_j>1.
 \end{cases}
 ```
 
@@ -133,7 +133,7 @@ Exact singular vectors and a promise of separated singular values are unnecessar
 
 ```math
 \widehat U
-=\widetilde V\operatorname{diag}(\widetilde s_j)\widetilde R^\dagger,
+=\widetilde V\mathrm{diag}(\widetilde s_j)\widetilde R^\dagger,
 \qquad
 \|\widehat U-U\|\le\eta.
 ```
@@ -194,7 +194,7 @@ T_{jk}=\sqrt{\frac{2}{N+1}}\sin\frac{\pi jk}{N+1},
 \qquad
 E_k=2J\cos\frac{\pi k}{N+1},
 \qquad
-U_g=S_g T\operatorname{diag}(e^{-itE_k})T^\mathsf{T}S_g^{-1}.
+U_g=S_g T\mathrm{diag}(e^{-itE_k})T^\mathsf{T}S_g^{-1}.
 ```
 
 The unit-modulus phases at $`t=O(N/J)`$ require logarithmic-in-$`N`$ argument guard bits. Sums have only $`N`$ bounded terms, and the largest gauge ratio is $`e^a`$, so $`O(a+\log N)`$ additional absolute-accuracy guard bits suffice. These are included in the displayed precision order. Polynomial-precision dense SVD and Givens factorization then use polynomial classical time and memory in $`N`$, $`P`$ and the input description length. An unscaled Taylor summation with uncontrolled cancellation is not assumed, in particular at $`g=0`$.
