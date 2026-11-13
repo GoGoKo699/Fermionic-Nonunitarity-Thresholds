@@ -1,0 +1,25 @@
+# Fermionic Nonunitarity Thresholds
+
+Question: how does an unknown fermionic input promise change reliable physical implementation of a known normalized non-Hermitian propagator?
+
+Primary routes:
+- README.md: principal consequences, threshold orders and scientific entry points.
+- science/README.md: connected argument.
+- science/model.md: exact chain, one unknown specimen, pure-input promises, conditional half-trace error and resource conventions.
+- science/dynamics.md: finite-N periodic/open rank comparison, reciprocal singular values and exterior-power conditioning at one prescribed ballistic time.
+- science/heralding.md: exact optimal filter and fixed-error arbitrary-CP bound; all-input success scale.
+- science/gaussian_converse.md: genuine Slater phase ensemble, collective discrimination and rejection bounds; unknown-Slater success scale.
+- science/gaussian_approximation.md: polar unitary, Wick variance, deterministic Slater bound and explicit promise separation; mixture counterexample.
+- science/implementation.md: inherited SVD/Givens primitives, helpers, logical work and rare-input finite precision.
+- science/interpretation.md: physical meaning, known-state and repeated-access boundaries.
+- references/RELATED_WORK.md and references/references.bib: primary attribution and actual model comparisons.
+- verification/README.md and verification/run_checks.py: finite reproducibility and limits.
+
+Essential distinctions:
+- The same transformation and unrestricted controls are compared under different INPUT promises: unknown pure Slater versus arbitrary correlated fixed-number pure state.
+- The target is the normalized retained quantum state, with state-dependent heralding probability charged. This is not a trace-preserving nonlinear channel or a diamond-distance statement.
+- The finite-time theorem concerns a specified t=alpha*N/J, not every time or every boundary condition.
+- At g=N^(-7/4), deterministic Slater error is O(N^(-1/4)); any uniformly accurate all-correlated-input processor has worst success at most exp[-cN^(1/4)].
+- Large eigenvector conditioning and the fermionic SVD compiler are inherited. The propagator and fixed-error promise boundary are the scientific addition.
+- The full intermediate Slater probability frontier is open; a matched nonvanishing-success SCALE is not that entire curve.
+- Inverse success presupposes a repeatable source. A known state description, extra copies, coherent preparation access and selected-observable output change the task.
